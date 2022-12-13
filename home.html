@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content = "width = device-width , initial-scale=1">
+
+<link rel = "preconnect" href = " https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2? family=Poppins&display= swap" rel = "stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html
+{
+font-size: 100%;
+scroll-behaviour : smooth;
+}
+*{
+margin : 0;
+padding : 0;
+}
+
+body
+{
+background-image: url(11.png);
+overflow-x:hidden;
+font-family : 'Poppins' , sans-serif;
+}
+
+#main
+{
+position: relative;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content:center;
+align-items: center;
+text-align: center;
+}
+
+#main_content::before {
+content: " ";
+position: absolute;
+top: 0;
+left : 0;
+width: 100%;
+height : 100%;
+background-image: url(img 8.jpg);
+background-size : cover;
+background-position : center center;
+background-repeat : no-repeat;
+background-attachment : fixed;
+filter: backgroung(50%);
+
+}
+
+#main_content {
+position : absolute;
+}
+
+#main_content h1
+{
+color:orange;
+font-size : 2.8rem;
+text-shadow: 2px 2px 2px #000;
+}
+#main_content h2
+{
+color : red;
+font-size: 2rem;
+font-family: cursive;
+margin-top : 1rem;
+margin-bottom: 4rem;
+}
+
+#main_content a
+{
+color : white;
+padding : 3px 20px 3px 20px;
+border: 1px solid orange;
+background : rgb(0,0,0,0.6);
+font-size : 1.5rem;
+text-decoration : none;
+border-radius : 25px;
+}
+
+#main_content a:hover{
+background: black;
+}
+
+#header{
+position: fixed;
+top:0;
+width:100vw;
+height: 70px;
+line-height: 70px;
+}
+
+#navbar
+{
+display:flex;
+justify-content: space-around;
+background :rgb(0, 0, 0, 0.5);
+
+}
+#navbar h1
+{
+color:orange;
+font-size: 1.8rem;
+text-shadow: 2px 2px 2px #000;
+font-family: cursive;
+}
+
+#navbar ul
+{
+display:flex
+}
+
+#navbar ul li
+{
+list-style:none;
+padding: 3px, 15px 3px 15px;
+}
+
+#navbar ul li:hover,#phone a:hover,#mobile_menu ul li:hover
+{
+background:black;
+cursor:pointer;
+}
+
+
+
+#navbar ul li a
+{
+text-decoration:none;
+color: white;
+font-size: 1.1rem;
+}
+
+#navbar ul ul 
+{ 
+position: relative; 
+background-color: orange; 
+padding: 0; text-align: left; 
+display: none;
+}
+#navbar ul ul li 
+{ border: 1px solid #00005D;
+  padding-left: 1em; 
+  margin-left: 0; 
+}
+
+#navbar ul ul li:hover ul { display: block; }
+
+
+#phone a{
+text-decoration:none;
+color: white;
+font-size: 1.1 rem;
+padding: 3px 15px 3px 15px;
+border: 1px solid orange;
+}
+
+#mobile_menu{
+display: none;
+height: 40px;
+line-height: 40px;
+background: brown;
+
+}
+#mobile_menu ul{
+display:flex;
+justify-content: center;
+}
+
+#mobile_menu ul li{
+list-style: none;
+padding: 0 5px 0 5px;
+}
+
+#mobile_menu ul li a{
+text-decoration:none;
+color: black;
+}
+
+
+@media screen and (max-width : 768px)
+{
+#mobile_menu{
+display: block;
+}
+
+html{
+font-size: 95%
+}
+
+}
+
+@media screen and (max-width : 360px)
+{
+html{
+font-size: 70%;
+}
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<div id = "main">
+	<div id="main_content">
+		<h1> Tiffin System </h1>
+		<h2> Best Quality and Homely food point </h2>
+		<a href="">Menu</a>
+	</div>
+</div>
+
+<div id="header">
+	<nav id="navbar">
+		<h1> Tiffin System </h1>
+		<ul>
+			<li><a href = " ">Home </a></li> &nbsp &nbsp;
+			<li><a href = " menu.html">Menu </a>
+				<ul> 
+					<li><a href="breakfast.html">Breakfast</a></li> 
+					<li><a href="lunch.html">Lunch</a></li> 
+					<li><a href="dinner.html">Dinner</a></li> 
+				</ul> 
+			</li> &nbsp &nbsp;
+
+			<li><a href = "gallery.html ">Gallery </a></li> &nbsp &nbsp;
+			<li><a href = "Contact1.html ">ContactUs</a></li>
+		</ul>
+		<div id="phone">
+			<a href="tel:807-357-1200"> 807-357-1200</a>
+		</div>
+	</nav>
+	<div id="mobile_menu">
+		<ul>
+			<li><a href = " ">Home </a></li> &nbsp &nbsp;
+			<li><a href = " mainpage.html">Menu </a></li> &nbsp &nbsp;
+			<li><a href = " ">Gallery </a></li> &nbsp &nbsp;
+			<li><a href = " ">About </a></li> &nbsp &nbsp;
+			<li><a href = "Contact1.html ">ContactUs</a></li>
+		</ul>
+	</div>
+</div>
+
+<footer>
+    <div class="wrapper">
+      <div id="footer-info">
+        <p>Copyright &copy; 2022 Alisha Jindal. All rights reserved.</p>
+        <p><a href="#">Terms of Service</a> I <a href="#">Privacy</a></p>
+    </div>
+	</footer
+
+
+
+
+</body>
+</html>
